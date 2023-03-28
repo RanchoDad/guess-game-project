@@ -1,6 +1,47 @@
-/* * {
-    border: .25rem solid green;
-} */
+/* media query & grid property & flexbox property*/
+@media screen and (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    .input{
+        display: grid;
+        grid-template-rows: 1fr 1fr; 
+       }
+    
+}
+body{
+    display: grid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+::placeholder {
+    color: #999; 
+  }
+.congrats {
+    display: flex;
+    position: absolute;
+    top: 0;
+}
+
+#new-word-input {
+    padding: 0.25rem;
+    display: inline-block;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+}
+#add-word-button{
+    padding: 0.25rem;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
 li {
     list-style-type: none;
+    color: aquamarine;
 }
